@@ -23,8 +23,26 @@ html, body{
     border: 2px solid black;  /*remove this later */
     background-color: lightblue;
     display: grid;
+    gap: 15px;
+    grid-template: 12svh 12svh 50svh 12svh / 25% 75%;
+    text-align: center;
+    overflow: hidden;
 }
 
 .container > div {
     border: 2px solid red; /*remove this later */
+}
+
+#header{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#sidebar{
+    grid-area: 2 / 1 / 4 / 2;
+}
+#article{
+    
+}
+#footer{
+    grid-area: 4 / 1 / 5 / 3;
 }
