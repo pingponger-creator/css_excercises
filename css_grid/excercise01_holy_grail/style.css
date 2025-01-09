@@ -6,8 +6,8 @@
 
 :root{
     --header-clr: rgb(1, 101, 74);
-    --footer-clr: rgb(38, 38, 38);
-    --nav--clr: rgb(70, 55, 163);
+    --footer-clr: rgb(70, 70, 70);
+    --nav--clr: rgb(96, 78, 218);
     --article-clr: rgb(109, 0, 198);
     --sidebar-clr: rgb(0, 109, 139);
     --clr: white;
@@ -19,30 +19,48 @@ html, body{
 
 .container{
     height: inherit;
-    margin: 1rem;
-    border: 2px solid black;  /*remove this later */
-    background-color: lightblue;
+    margin: 2rem;
+    color: var(--clr);
     display: grid;
     gap: 15px;
-    grid-template: 12svh 12svh 50svh 12svh / 25% 75%;
-    text-align: center;
-    overflow: hidden;
+    grid-template: 10svh 10svh 55svh 10svh / 25% 75%;
 }
 
 .container > div {
-    border: 2px solid red; /*remove this later */
+    text-align: center;
+    border-radius:10px;
 }
 
 #header{
     grid-area: 1 / 1 / 2 / 3;
+    background-color: var(--header-clr);
 }
 
 #sidebar{
     grid-area: 2 / 1 / 4 / 2;
+    background-color: var(--sidebar-clr);
 }
 #article{
-    
+    background-color: var(--article-clr); 
 }
 #footer{
     grid-area: 4 / 1 / 5 / 3;
+    background-color: var(--footer-clr);
+}
+
+#navbar{
+    background-color: var(--nav--clr);
+
+}
+
+p{
+    margin: 1rem;
+    text-align: start;
+}
+
+@media screen and (max-width: 768px){
+    #article{
+        overflow-y: scroll;
+    }
+    
 }
