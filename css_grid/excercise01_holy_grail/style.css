@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+    --header-clr: rgb(1, 101, 74);
+    --footer-clr: rgb(38, 38, 38);
+    --nav--clr: rgb(70, 55, 163);
+    --article-clr: rgb(109, 0, 198);
+    --sidebar-clr: rgb(0, 109, 139);
+    --clr: white;
+}
+
 html, body{
     height: 100svh;
 }
