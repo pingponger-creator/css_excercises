@@ -25,7 +25,7 @@ html, body{
     color: var(--clr);
     display: grid;
     gap: 15px;
-    grid-template: 10svh 10svh 55svh 10svh / 25% 75%;
+    grid-template: 10svh 10svh 55svh 10svh / minmax(100px, 25%) minmax(300px, 75%);
 }
 
 .container > div {
