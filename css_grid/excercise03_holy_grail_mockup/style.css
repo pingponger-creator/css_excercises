@@ -5,3 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Basic/Initial Styling */
+
+:root{
+    --header-clr:grey;
+    --primary-bg-clr: white;
+    --secondary-bg-clr: red;
+    --primary-txt-clr: black;
+}
+
+
