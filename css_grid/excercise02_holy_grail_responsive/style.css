@@ -1,0 +1,46 @@
+:root{
+    --header-clr: rgb(1, 101, 74);
+    --footer-clr: rgb(70, 70, 70);
+    --nav--clr: rgb(96, 78, 218);
+    --article-clr: rgb(109, 0, 198);
+    --sidebar-clr: rgb(0, 109, 139);
+    --clr: white;
+}
+
+html, body{
+    height: 100svh;
+}
+
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    height: inherit;
+    border: 2px solid orangered;
+    display: grid;
+    color: var(--clr);
+}
+
+.container > div {
+    border: 2px solid orangered;
+    text-align: center;
+}
+
+.header{
+    background-color: var(--header-clr);
+}
+
+.sidebar{
+    background-color: var(--sidebar-clr);
+}
+
+.nav{
+    background-color: var(--nav--clr);
+}
+
+.article{
+    background-color: var(--article-clr);
+}
+
+.footer{
+    background-color: var(--footer-clr);
+}
